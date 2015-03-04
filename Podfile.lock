@@ -10,6 +10,9 @@ PODS:
   - LayerKit (0.11.2)
   - LYRCountDownLatch (0.9.0)
   - OCMock (3.1.2)
+  - SDWebImage (3.7.1):
+    - SDWebImage/Core (= 3.7.1)
+  - SDWebImage/Core (3.7.1)
 
 DEPENDENCIES:
   - Atlas (from `.`)
@@ -19,6 +22,7 @@ DEPENDENCIES:
   - LayerKit
   - LYRCountDownLatch (from `https://github.com/layerhq/LYRCountDownLatch.git`)
   - OCMock
+  - SDWebImage
 
 EXTERNAL SOURCES:
   Atlas:
@@ -44,5 +48,6 @@ SPEC CHECKSUMS:
   LayerKit: 3546568785140970c3405d686a61af50260d6d48
   LYRCountDownLatch: 72a444f729ca5a8c6157c0b58f335a44e6702b48
   OCMock: ecdd510b73ef397f2f97274785c1e87fd147c49f
+  SDWebImage: 116e88633b5b416ea0ca4b334a4ac59cf72dd38d
 
 COCOAPODS: 0.36.0

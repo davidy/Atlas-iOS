@@ -33,6 +33,13 @@
  */
 @property (nonatomic, readonly) UIImage *avatarImage;
 
+
+/**
+ @abstract Returns the avatar image of the receiver.
+ */
+@property (nonatomic, readonly) NSURL *avatarNSURL;
+
+
 /** 
  @abstract Returns the avatar initials of the receiver.
  */

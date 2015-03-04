@@ -6,6 +6,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 target 'Programmatic' do
   pod 'Atlas', path: '.'
   pod 'LayerKit'
+  pod 'SDWebImage'
 end
 
 target 'Storyboard' do

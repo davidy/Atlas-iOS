@@ -19,6 +19,7 @@
 //
 #import "ATLAvatarImageView.h"
 #import "ATLConstants.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @interface ATLAvatarImageView ()
 
@@ -84,9 +85,18 @@ NSString *const ATLAvatarImageViewAccessibilityLabel = @"ATLAvatarImageViewAcces
 
 - (void)setAvatarItem:(id<ATLAvatarItem>)avatarItem
 {
-    if (avatarItem.avatarImage) {
-        self.image = avatarItem.avatarImage;
-    } else if (avatarItem.avatarInitials) {
+//    if (avatarItem.avatarImage) {
+//        self.image = avatarItem.avatarImage;
+//    } else if (avatarItem.avatarInitials) {
+//        self.initialsLabel.text = avatarItem.avatarInitials;
+//    }
+//    _avatarItem = avatarItem;
+    
+    if (avatarItem.avatarNSURL) {
+        //self.sd_setImageWithURL(avatarItem.avatarNSURL);
+        [self sd_setImageWithURL:avatarItem.avatarNSURL];
+    }
+    else if (avatarItem.avatarInitials) {
         self.initialsLabel.text = avatarItem.avatarInitials;
     }
     _avatarItem = avatarItem;
