@@ -585,8 +585,8 @@ static NSString *const ATLPushNotificationSoundName = @"layerbell.caf";
 
 - (void)sendMessageWithLocation:(CLLocation *)location
 {
-    ATLMediaAttachment *attachement = [ATLMediaAttachment mediaAttachmentWithLocation:location];
-    LYRMessage *message = [self messageForMessageParts:ATLMessagePartsWithMediaAttachment(attachement) pushText:@"Attachement: Location"];
+    ATLMediaAttachment *attachment = [ATLMediaAttachment mediaAttachmentWithLocation:location];
+    LYRMessage *message = [self messageForMessageParts:ATLMessagePartsWithMediaAttachment(attachment) pushText:@"Attachment: Location"];
     [self sendMessage:message];
 }
 

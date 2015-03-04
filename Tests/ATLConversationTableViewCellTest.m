@@ -151,8 +151,8 @@ extern NSString *const ATLLocationMIMETypePlaceholderText;
 {
     [self createNewConversation];
     CLLocation *location = [[CLLocation alloc] initWithLatitude:123.00 longitude:54.00];
-    ATLMediaAttachment *attachement = [ATLMediaAttachment mediaAttachmentWithLocation:location];
-    NSArray *parts = ATLMessagePartsWithMediaAttachment(attachement);
+    ATLMediaAttachment *attachment = [ATLMediaAttachment mediaAttachmentWithLocation:location];
+    NSArray *parts = ATLMessagePartsWithMediaAttachment(attachment);
     LYRMessageMock *message = [self.testInterface.layerClient newMessageWithParts:parts options:nil error:nil];
     [self.conversation sendMessage:message error:nil];
     [tester waitForViewWithAccessibilityLabel:ATLLocationMIMETypePlaceholderText];

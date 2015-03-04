@@ -333,9 +333,9 @@ extern NSString *const ATLMessageInputToolbarSendButton;
 - (void)sendPhotoMessage
 {
     UIImage *image = [UIImage imageNamed:@"test-logo"];
-    ATLMediaAttachment *attachement = [ATLMediaAttachment mediaAttachmentWithImage:image metadata:nil thumbnailSize:100];
+    ATLMediaAttachment *attachment = [ATLMediaAttachment mediaAttachmentWithImage:image metadata:nil thumbnailSize:100];
     NSError *error;
-    LYRMessageMock *message = [self.testInterface.layerClient newMessageWithParts:ATLMessagePartsWithMediaAttachment(attachement) options:nil error:&error];
+    LYRMessageMock *message = [self.testInterface.layerClient newMessageWithParts:ATLMessagePartsWithMediaAttachment(attachment) options:nil error:&error];
     expect(error).to.beNil;
     [self.conversation sendMessage:message error:&error];
     expect(error).to.beNil;
