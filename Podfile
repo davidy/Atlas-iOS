@@ -12,6 +12,7 @@ end
 target 'Storyboard' do
   pod 'Atlas', path: '.'
   pod 'LayerKit'
+  pod 'SDWebImage'
 end
 
 target 'ProgrammaticTests' do

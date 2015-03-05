@@ -293,7 +293,7 @@ NSString *const ATLConversationTableViewAccessibilityIdentifier = @"Conversation
         } else {
             switch (deletionMode.integerValue) {
                 case LYRDeletionModeLocal:
-                    actionString = @"Local";
+                    actionString = @"Delete";
                     break;
                 case LYRDeletionModeAllParticipants:
                     actionString = @"Global";
