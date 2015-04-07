@@ -192,6 +192,12 @@
 - (void)registerClass:(Class<ATLMessagePresenting>)cellClass forMessageCellWithReuseIdentifier:(NSString *)reuseIdentifier;
 
 /**
+ @abstract Retrieve conversation from User
+ @param participants The ATLMUser set to lookup
+ */
+- (LYRConversation *)conversationWithParticipants:(NSSet *)participants;
+
+/**
  @abstract Reloads the cell for the given Message.
  @param message The Message object to reload the corresponding cell of. Cannot be `nil`.
  */
